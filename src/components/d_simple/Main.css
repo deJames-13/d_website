@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+.btn,
+a {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #a7f5df;
+  border-radius: 25px;
+  text-align: center;
+  width: 100px;
+}
+
+.btn:hover,
+a:hover {
+  background-color: #07ffb925;
+  scale: 0.98;
+}
+.btn:active,
+a:active {
+  opacity: 1;
+  scale: 0.9;
+  border-bottom: 2px solid #a7f5df;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* From https://css.glass */
+  background: rgba(45, 45, 45, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(45, 45, 45, 0.3);
+}
+.avatar-wrapper,
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar-wrapper {
+  width: 300px;
+  padding: 15px;
+}
+.avatar {
+  border: 2px solid azure;
+  border-radius: 50%;
+}
+.avatar img {
+  display: block;
+  border-radius: 50%;
+}
+.info-wrapper {
+  padding-inline: 15px;
+}
+.handle-wrapper {
+  margin-bottom: 15px;
+}
+.handle {
+  color: #a7a7a7;
+}
+.bio {
+  margin-bottom: 15px;
+}
+.message-box textarea {
+  width: 100%;
+  display: block;
+  resize: none;
+  background-color: inherit;
+  border: 1px solid #a7f5df;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-block: 20px;
+}
+.message-box textarea:focus {
+  outline: none;
+}
+
+.options {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.options input {
+  background-color: inherit;
+}
+.ext:hover {
+  background-color: rgba(255, 77, 77, 0.185);
+}

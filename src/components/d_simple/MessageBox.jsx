@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const MessageBox = ({ sendMsg, onToggleMsg }) => {
+const MessageBox = ({ sendMsg }) => {
   const [txtMsg, setTxtMsg] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,9 +25,9 @@ const MessageBox = ({ sendMsg, onToggleMsg }) => {
         }}
       ></textarea>
       <div className='options'>
-        <span className='btn ext' onClick={onToggleMsg}>
+        <Link to='/' className='btn ext'>
           Exit
-        </span>
+        </Link>
         <input
           type='submit'
           name='sendmsg'

@@ -12,6 +12,7 @@ a {
   border-radius: 25px;
   text-align: center;
   width: 100px;
+  color: inherit;
 }
 
 .btn:hover,

@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Button = ({ text, onToggleMsg }) => {
+const Button = ({ text, path }) => {
   return (
     <>
       <div>
-        <div className='btn message' onClick={onToggleMsg}>
+        <Link to={path} className='btn message'>
           {text}
-        </div>
+        </Link>
       </div>
     </>
   );

@@ -46,7 +46,7 @@
 }
 .message-wrapper .msg-fit {
   height: 100px;
-  width: fill;
+  width: stretch;
 }
 .message-wrapper .msg {
   font-size: 16px;

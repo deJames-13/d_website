@@ -9,7 +9,7 @@ const MsgPage = ({ data }) => {
     <>
       <div className='page-wrapper'>
         <div className='header'>
-          <h1>Header</h1>
+          <h1>Mesages</h1>
         </div>
         <div className='contents'>
           {data.map((msg, idx) => {

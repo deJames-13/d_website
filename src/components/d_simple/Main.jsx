@@ -8,7 +8,8 @@ import './Main.css';
 import MessageBox from './MessageBox';
 import MsgPage from './MsgPage';
 
-const API_URL = 'http://127.0.0.1:8000/msg/message/';
+// const API_URL = 'http://127.0.0.1:8000/msg/message/';
+const API_URL = 'https://d-api-three.vercel.app/msg/message/';
 
 const Main = () => {
   const [data, setData] = useState([]);

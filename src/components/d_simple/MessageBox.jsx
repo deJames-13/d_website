@@ -12,7 +12,7 @@ const MessageBox = ({ sendMsg }) => {
     <form action='/' method='' className='message-box'>
       <textarea
         name='messagebox'
-        placeholder='di nagana ung send button🥲'
+        placeholder='mahal mag host ng database server🥲'
         id='msgBox'
         autoComplete='off'
         spellCheck='off'
@@ -29,6 +29,7 @@ const MessageBox = ({ sendMsg }) => {
           Exit
         </Link>
         <input
+          href='#msgBox'
           type='submit'
           name='sendmsg'
           className='btn send'

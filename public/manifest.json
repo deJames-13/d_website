@@ -3,8 +3,8 @@
   "name": "A react app made by d_percyfied",
   "icons": [
     {
-      "src": "source-code",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "icons8-sleeping-96.png",
+      "sizes": "96x96",
       "type": "image/x-icon"
     },
     {

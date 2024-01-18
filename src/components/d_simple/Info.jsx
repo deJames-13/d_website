@@ -3,6 +3,8 @@ import React from 'react';
 import Avatar from './Avatar';
 import Button from './Button';
 const Info = () => {
+  var myAge = new Date().getFullYear() - 2004;
+
   return (
     <>
       <div className='avatar-wrapper '>
@@ -33,11 +35,11 @@ const Info = () => {
         <div className='user-info'>
           <div className='my-age'>
             <div>
-              <strong>18</strong> years old
+              <strong>{{ myAge }}</strong> years old
             </div>
           </div>
           <div>
-            <strong>1st</strong> year college
+            <strong>BSIT</strong> student
           </div>
         </div>
       </div>

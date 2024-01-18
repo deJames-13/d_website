@@ -3,7 +3,8 @@ import React from 'react';
 import Avatar from './Avatar';
 import Button from './Button';
 const Info = () => {
-  var myAge = new Date().getFullYear() - 2004;
+  var myAge = new Date() - new Date(2004, 3, 13);
+  myAge = Math.floor(myAge / 31557600000);
 
   return (
     <>
@@ -35,7 +36,7 @@ const Info = () => {
         <div className='user-info'>
           <div className='my-age'>
             <div>
-              <strong>{{ myAge }}</strong> years old
+              <strong>{myAge}</strong> years old
             </div>
           </div>
           <div>

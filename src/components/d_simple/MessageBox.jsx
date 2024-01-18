@@ -6,7 +6,8 @@ const MessageBox = ({ sendMsg }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    sendMsg(txtMsg);
+
+    // sendMsg(txtMsg);
     setTxtMsg('');
   };
   return (

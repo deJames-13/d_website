@@ -2,7 +2,7 @@
 import { easeIn, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Avatar from './Avatar';
 import Info from './Info';
@@ -47,7 +47,8 @@ const Main = () => {
         }
       })
       .catch((err) => {
-        console.log(err.message);
+        // console.log(err.message);
+        toast.warn(' 🥲 Message Not Sent!', toast_default);
       });
   };
 

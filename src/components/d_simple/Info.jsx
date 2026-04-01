@@ -2,9 +2,24 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Avatar from './Avatar';
 import Button from './Button';
+
+function calculateAge(birthDate) {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+
+  // If the current month is before the birth month, 
+  // or if it's the birth month but the day hasn't arrived yet, subtract 1 year.
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+
 const Info = () => {
-  var myAge = new Date() - new Date(2004, 3, 13);
-  myAge = Math.floor(myAge / 31557600000);
+  const myAge = calculateAge(new Date(2004, 3, 13));
+  // console.log(myAge);
 
   return (
     <>
